@@ -2,6 +2,9 @@
   "name": "prototype-ember",
   "dependencies": {
     "ember": "~2.8.0",
-    "ember-cli-shims": "0.1.1"
+    "ember-cli-shims": "0.1.1",
+    "osf-style": "https://github.com/CenterForOpenScience/osf-style.git#48197d234baf07c321c56edfd9f48b5624374453",
+    "bootstrap": "~3.3.5",
+    "bootstrap-sass": "^3.3.7"
   }
 }

@@ -1,22 +1,41 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+  var AUTHORIZER = process.env.AUTHORIZER || 'token';
+  var authConfig = {};
+  if (AUTHORIZER === 'cookie') {
+      authConfig = {
+          authorizer: 'authorizer:osf-cookie',
+          authenticator: 'authenticator:osf-cookie',
+          authenticationRoute: 'cookielogin'
+      };
+  }
   var ENV = {
-    modulePrefix: 'prototype-ember',
-    environment: environment,
-    rootURL: '/',
-    locationType: 'auto',
-    EmberENV: {
-      FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
-      }
-    },
+      modulePrefix: 'prototype-ember',
+      environment: environment,
+      rootURL: '/',
+      locationType: 'auto',
 
-    APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
-    }
+      EmberENV: {
+          FEATURES: {
+              // Here you can enable experimental features on an ember canary build
+              // e.g. 'with-controller': true
+          }
+      },
+      APP: {
+          // Here you can pass flags/options to your application instance
+          // when it is created
+      },
+
+      authorizationType: AUTHORIZER,
+      'ember-simple-auth': authConfig, // TODO: Does this override any default behaviors?
+      i18n: {
+          defaultLocale: 'en-US'
+      },
+
+      'ember-cli-mirage': {
+          enabled: false
+      }
   };
 
   if (environment === 'development') {
