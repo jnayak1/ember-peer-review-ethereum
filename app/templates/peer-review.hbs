@@ -1,5 +1,19 @@
-{{file-browser rootItem=model
+<div class="row">
+	<div class="col-md-4">
+		<h3>Select a File for Peer Review</h3>
+	</div>
+	<div class="col-md-offset-5 col-md-3">
+		<div class="vertical-buttons">
+			<button type="button" class="btn btn-default">Cancel</button>
+			<button type="button" class="btn btn-success {{if download '' 'disabled'}}">Next</button>
+		</div>
+	</div>
+</div>
+{{file-browser-selector rootItem=model
 openFile=(action 'fileDetail')
 openNode=(action 'nodeDetail')
+download_link=download
 }}
-{{outlet}}
+<div class="row">
+	
+</div>

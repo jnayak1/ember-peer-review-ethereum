@@ -35,7 +35,9 @@ module.exports = function(environment) {
 
       'ember-cli-mirage': {
           enabled: false
-      }
+      },
+
+      fileUrl: "https://staging-files.osf.io/v1/resources/"
   };
 
   if (environment === 'development') {

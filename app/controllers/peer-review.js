@@ -1,12 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+	download: null,
 	actions:{
 		fileDetail(file) {
-	        this.transitionToRoute('file',
-	                               this.get('node'),
-	                               file.get('provider'),
-	                               file);
+			var download = file.get('links.download');
+			this.set('download', download);
 	    },
 
 	    nodeDetail(node) {
