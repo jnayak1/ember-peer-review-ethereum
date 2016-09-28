@@ -7,10 +7,10 @@
 #    REDIRECT_URI: http://localhost:4200/login/
 
 stage:
-    CLIENT_ID: ab6efcaa06434f1583e26006ab5dda60
-    PERSONAL_ACCESS_TOKEN: UBYe40hJPTQb1wdX21QxQnH6CjOsF4f62jz8FFp2
+    CLIENT_ID: 7ad79c53a5c34d929c3425818af08cf4
+    PERSONAL_ACCESS_TOKEN: pNcOXNBBI16D3oBnQeWED9yyyRCfPbDosmg1b76t
     OAUTH_SCOPES: osf.full_read osf.full_write
-    REDIRECT_URI: http://localhost:4200/
+    REDIRECT_URI: http://localhost:4200/login/
 
 # stage2:
 #    CLIENT_ID: null

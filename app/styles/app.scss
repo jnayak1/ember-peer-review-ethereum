@@ -2,6 +2,10 @@
 @import 'ember-power-select';
 @import 'base';
 
+#main{
+    padding-top: 50px;
+}
+
 /* Override styles from ember-osf and osf */
 .footer {
     margin-top: 0;
