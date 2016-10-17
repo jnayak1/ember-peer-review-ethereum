@@ -31,9 +31,20 @@ export default Ember.Route.extend({
         Ember.$.getJSON("contracts/PeerReviewContract.sol").then(function () {}, function(value) {
             // rejection
             // promise rejected because not json file
-            var contract = value.responseText;
-            var contractWOLineBreaks = contract.replace(/\r?\n|\r/g, "");
+            var rawContract = value.responseText;
+
+            // remove line breaks
+            var contractWOLineBreaks = rawContract.replace(/\r?\n|\r/g, "");
             console.log(contractWOLineBreaks);
+
+            // compile contract
+            
+            // Deploy contract
+            
+            
         });
+
+        
+
     }
 });
