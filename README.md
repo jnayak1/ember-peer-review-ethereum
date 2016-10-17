@@ -1,7 +1,6 @@
-# Prototype-ember
+# ember-peer-review-ethereum
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a prototype of a peer-review ethereum dapp (decentralized application). 
 
 ## Prerequisites
 
@@ -16,13 +15,21 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd prototype-ember`
+* `git clone https://github.com/CenterForOpenScience/ember-osf`
+* `cd ember-osf`
+* Complete config/local.yml with keys obtained from osf.io or staging.osf.io
+* `npm install`
+* `bower install`
+* `cd ../ember-peer-review-ethereum`
+* `ember install ../ember-osf`
+* `npm link ../ember-osf`
+* Complete config/local.yml with keys obtained from osf.io or staging.osf.io
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
-* `ember serve`
+* `BACKEND=stage ember serve` (stage or whatever you setup in local.yml)
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
