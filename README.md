@@ -19,8 +19,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `git clone https://github.com/CenterForOpenScience/ember-osf`
+* `git clone https://github.com/jnayak1/ember-peer-review-ethereum.git`
+* `git clone https://github.com/CenterForOpenScience/ember-osf.git`
 * `cd ember-osf`
 * Complete config/local.yml with keys obtained from osf.io or staging.osf.io
 * `npm install`
