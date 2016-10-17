@@ -65,4 +65,5 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 * [web3.js](https://github.com/ethereum/web3.js/)
+* [Geth Contract Tutorial](https://github.com/ethereum/go-ethereum/wiki/Contract-Tutorial)
 
