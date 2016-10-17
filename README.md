@@ -1,7 +1,6 @@
-# Prototype-ember
+# ember-peer-review-ethereum
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a prototype of a peer-review ethereum dapp (decentralized application). 
 
 ## Prerequisites
 
@@ -13,17 +12,32 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+## Ethereum Specific Dependencies
+* [geth](https://github.com/ethereum/go-ethereum)
+* [solc](https://github.com/ethereum/solidity)
+  * I had success installing from source rather than from Brew (on Mac) or apt-get (on Ubuntu).
+
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd prototype-ember`
+* `git clone https://github.com/jnayak1/ember-peer-review-ethereum.git`
+* `git clone https://github.com/CenterForOpenScience/ember-osf.git`
+* `cd ember-osf`
+* Complete config/local.yml with keys obtained from osf.io or staging.osf.io
+* `npm install`
+* `bower install`
+* `cd ../ember-peer-review-ethereum`
+* `ember install ../ember-osf`
+* `npm link ../ember-osf`
+* Complete config/local.yml with keys obtained from osf.io or staging.osf.io
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
-* `ember serve`
+* `BACKEND=stage ember serve` (stage or whatever you setup in local.yml)
+* `geth --fast --cache=512 --testnet --rpc --rpccorsdomain "http://localhost:4200" console`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+* Interface with Ethereum network using [web3.js](https://github.com/ethereum/web3.js/)
 
 ### Code Generators
 
@@ -50,4 +64,5 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* [web3.js](https://github.com/ethereum/web3.js/)
 
