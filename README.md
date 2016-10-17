@@ -37,6 +37,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `BACKEND=stage ember serve` (stage or whatever you setup in local.yml)
+* `geth --fast --cache=512 --testnet --rpc --rpccorsdomain "http://localhost:4200" console`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
