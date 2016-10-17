@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('peer-review', { path: '/peer-review/:node_id' });
   this.route('login');
   this.route('signup');
+  this.route('journals');
+  this.route('contract');
 });
 
 export default Router;
