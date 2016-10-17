@@ -12,6 +12,13 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
+## Dependencies
+* geth
+  * https://github.com/ethereum/go-ethereum
+* solc
+  * I had success installing from source rather than from Brew (on Mac) or apt-get (on Ubuntu).
+  * https://github.com/ethereum/solidity
+
 ## Installation
 
 * `git clone <repository-url>` this repository
