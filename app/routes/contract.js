@@ -39,8 +39,25 @@ export default Ember.Route.extend({
             console.log(peerReviewCompiled);
 
             // Deploy contract
-            
-            
+            var _journal = "Hello World!"
+            var peerReviewContract = web3.eth.contract(peerReviewCompiled.PeerReview.info.abiDefinition);
+
+            var peerReview = peerReviewContract.new(_journal,{from:web3.eth.accounts[0], data: peerReviewCompiled.PeerReview.code, gas: 1000000}, function(e, contract){
+              if(!e) {
+
+                if(!contract.address) {
+                  console.log("Contract transaction send: TransactionHash: " + contract.transactionHash + " waiting to be mined...");
+
+                } else {
+                  console.log("Contract mined! Address: " + contract.address);
+                  console.log(contract);
+                }
+
+              } else{
+                console.log(e);
+              }
+            });
+            console.log(peerReview);
         });
 
         
