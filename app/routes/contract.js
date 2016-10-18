@@ -32,13 +32,12 @@ export default Ember.Route.extend({
             // rejection
             // promise rejected because not json file
             var rawContract = value.responseText;
-
-            // remove line breaks
-            var contractWOLineBreaks = rawContract.replace(/\r?\n|\r/g, "");
-            console.log(contractWOLineBreaks);
+            console.log(rawContract);
 
             // compile contract
-            
+            var peerReviewCompiled = web3.eth.compile.solidity(rawContract);
+            console.log(peerReviewCompiled);
+
             // Deploy contract
             
             
