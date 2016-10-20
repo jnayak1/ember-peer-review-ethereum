@@ -35,7 +35,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `BACKEND=stage ember serve` (stage or whatever you setup in local.yml)
-* `geth --fast --cache=512 --testnet --rpc --rpccorsdomain "http://localhost:4200" console`
+* `geth --fast --cache=512 --testnet --password /path/to/your_pw_file.txt --unlock <account_addr> --rpc --rpccorsdomain "http://localhost:4200" console`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Interface with Ethereum network using [web3.js](https://github.com/ethereum/web3.js/)
 
