@@ -3,6 +3,12 @@ import Web3 from 'npm:web3';
 
 
 export default Ember.Controller.extend({
+    contract: null,
+    contractValue: null,
+    contractState: null,
+    contractJournal: null,
+    contractResearcher: null,
+    contractFileHash: null,
     actions:{
         sendContract(journalAddress, amountToSend, fileHash){
             
@@ -11,7 +17,7 @@ export default Ember.Controller.extend({
             // set rpc
             web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
 
-
+            var _controller = this;
             // Get contract
             // Promise will be rejected because file isn't json, use rejection function
             Ember.$.getJSON("contracts/PeerReviewContract.sol").then(function () {}, function(value) {
@@ -27,7 +33,7 @@ export default Ember.Controller.extend({
                 var _journal = journalAddress;
                 var peerReviewContract = web3.eth.contract(peerReviewCompiled.PeerReview.info.abiDefinition);
 
-                var peerReview = peerReviewContract.new(_journal,{from:web3.eth.accounts[0], data: peerReviewCompiled.PeerReview.code, gas: 1000000}, function(e, contract){
+                var peerReview = peerReviewContract.new(_journal,{from:web3.eth.accounts[0], value: web3.toWei(amountToSend,'ether'), data: peerReviewCompiled.PeerReview.code, gas: 1000000}, function(e, contract){
                   if(!e) {
 
                     if(!contract.address) {
@@ -35,7 +41,14 @@ export default Ember.Controller.extend({
 
                     } else {
                       console.log("Contract mined! Address: " + contract.address);
-                      console.log(contract);
+                      _controller.set('contract', contract);
+                      _controller.set('contractValue', contract.value().toString());
+                      _controller.set('contractState', contract.state());
+                      _controller.set('contractJournal', contract.journal());
+                      _controller.set('contractResearcher', contract.researcher());
+                      _controller.set('contractFileHash', contract.fileHash());
+                      console.log(_controller.get('contract'));
+
                     }
 
                   } else{
@@ -45,6 +58,5 @@ export default Ember.Controller.extend({
                 console.log(peerReview);
             });
         }
-
     }
 });

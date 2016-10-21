@@ -4,7 +4,7 @@ contract PeerReview {
   address public journal;
   enum State { Created, Approved, Declined }
   State public state;
-  bytes fileHash;
+  bytes public fileHash;
 
   function PeerReview(address initJournal, bytes initFileHash)
     payable
