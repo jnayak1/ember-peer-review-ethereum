@@ -1,0 +1,10 @@
+<p>Journal address:</p>
+{{input type='text' value=model.journalAddress}}
+<p>Amount to send:</p>
+{{input type='text' value=model.amountToSend}}
+<p>File hash:</p>
+{{input type='text' value=model.fileHash}}
+
+<button {{action "sendContract" model.journalAddress model.amountToSend model.fileHash}}>
+Submit to Journal
+</button>
