@@ -42,7 +42,7 @@ export default Ember.Controller.extend({
                     } else {
                       console.log("Contract mined! Address: " + contract.address);
                       _controller.set('contract', contract);
-                      _controller.set('contractValue', contract.value().toString());
+                      _controller.set('contractValue', web3.fromWei(contract.value(), "ether").toString());
                       _controller.set('contractState', contract.state());
                       _controller.set('contractJournal', contract.journal());
                       _controller.set('contractResearcher', contract.researcher());

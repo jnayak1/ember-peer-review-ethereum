@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('signup');
   this.route('journals');
   this.route('contract');
+  this.route('filters');
 });
 
 export default Router;
