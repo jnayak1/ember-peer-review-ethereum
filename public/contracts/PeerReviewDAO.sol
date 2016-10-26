@@ -9,6 +9,7 @@ contract PeerReviewDAO {
         // https://solidity.readthedocs.io/en/develop/control-structures.html#creating-contracts-via-new
         // Cannot limit the amount of gas
         
-        PeerReview newPR = (new PeerReview).value(msg.value)(initJournal, initFileHash)
+        PeerReview newPR = (new PeerReview).value(msg.value)(initJournal, initFileHash);
+        peerReviewContracts.push(newPR.address);
     }
 }
