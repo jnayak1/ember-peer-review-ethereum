@@ -12,7 +12,7 @@ contract PeerReviewDAO {
         // Cannot limit the amount of gas!
         
         PeerReview newPR = (new PeerReview).value(msg.value)(initJournal, initFileHash);
-        peerReviewContracts.push(address(newPR));
+        peerReviewContracts.push(newPR);
 
         peerReviewCreated();
     }
