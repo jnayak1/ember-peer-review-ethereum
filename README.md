@@ -57,7 +57,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Just serve the Ember app! This can be done using a CDN (i.e. Amazon Cloud Front) or with a peer-to-peer delivery network such as [IPFS](https://ipfs.io/).
+- a CDN (i.e. Amazon Cloud Front)
+- a peer-to-peer delivery network such as [IPFS](https://ipfs.io/).
 
 ## Further Reading / Useful Links
 
