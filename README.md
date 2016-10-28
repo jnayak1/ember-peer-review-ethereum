@@ -58,7 +58,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 Deployment could be done in a few of different ways:
-- Traditinal server (i.e. NodeJS, Django, Rails, etc.). Stand up server that delivers app to user.
+- a traditinal server (i.e. [NGINX](https://www.nginx.com/resources/wiki/), or [Apache Web Server](https://httpd.apache.org/)).
 - a CDN (i.e. [Amazon Cloud Front](https://aws.amazon.com/cloudfront/)).
 - a peer-to-peer delivery network such as [IPFS](https://ipfs.io/).
 
