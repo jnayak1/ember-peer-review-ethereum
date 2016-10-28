@@ -1,6 +1,6 @@
 # ember-peer-review-ethereum
 
-This is a prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application). The goal of this prototype is to show how "journals" (groups of experts) can offer peer-review services and researchers can submit their reports to these "journals" for peer-review without the need of any intermediate or central authority.  
+This is a prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application). The goal of this prototype is to show how "journals" (groups of experts) can offer peer-review services and researchers can submit their reports to these "journals" for peer-review without coordination from intermediates or central authorities (i.e. [Elsevier](https://en.wikipedia.org/wiki/Elsevier)). Instead, researchers and journals can be brought together over the Ethereum blockchain.
 
 Work in progress!
 
