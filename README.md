@@ -1,6 +1,8 @@
 # ember-peer-review-ethereum
 
-This is a prototype of a peer-review ethereum dapp (decentralized application). 
+This is a prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application). The goal of this prototype is to show how the peer-review process can be completely decentralized. 
+
+Work in progress!
 
 ## Prerequisites
 
