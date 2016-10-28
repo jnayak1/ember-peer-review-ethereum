@@ -15,6 +15,9 @@ You will need the following things properly installed on your computer.
 * [PhantomJS](http://phantomjs.org/)
 
 ## Additional Ethereum Specific Prerequisites
+
+You will need these installed too.
+
 * [geth](https://github.com/ethereum/go-ethereum)
 * [solc](https://github.com/ethereum/solidity)
   * I had success installing from source rather than from Brew (on Mac) or apt-get (on Ubuntu).
