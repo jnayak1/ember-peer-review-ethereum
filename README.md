@@ -20,7 +20,7 @@ You will need these installed too.
 
 * [geth](https://github.com/ethereum/go-ethereum)
 * [solc](https://github.com/ethereum/solidity)
-  * I had success installing from source rather than from Brew (on Mac) or apt-get (on Ubuntu).
+  * I had success installing from [source code](http://solidity.readthedocs.io/en/develop/installing-solidity.html#building-from-source) rather than from Brew (on Mac) or apt-get (on Ubuntu).
 
 ## Installation
 
