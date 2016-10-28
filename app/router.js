@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('contract');
   this.route('filters');
   this.route('contract-list');
+  this.route('accounts');
 });
 
 export default Router;
