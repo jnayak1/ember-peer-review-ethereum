@@ -1,6 +1,6 @@
 # ember-peer-review-ethereum
 
-This is a prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application). The goal of this prototype is to show how the peer-review process can be completely decentralized. 
+This is a prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application). The goal of this prototype is to show how "journals" (groups of experts) can offer peer-review services and researchers can submit their reports to these "journals" for peer-review without the need of any intermediate or central authority.  
 
 Work in progress!
 
@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
-## Ethereum Specific Dependencies
+## Additional Ethereum Specific Prerequisites
 * [geth](https://github.com/ethereum/go-ethereum)
 * [solc](https://github.com/ethereum/solidity)
   * I had success installing from source rather than from Brew (on Mac) or apt-get (on Ubuntu).
