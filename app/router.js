@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('journals');
   this.route('contract');
   this.route('filters');
+  this.route('contract-list');
 });
 
 export default Router;
