@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('journal', 'Unit | Model | journal', {
+moduleForModel('peer-review-contract', 'Unit | Model | peer review contract', {
   // Specify the other units that are required for this test.
   needs: []
 });

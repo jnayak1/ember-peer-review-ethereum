@@ -7,14 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('peer-review', { path: '/peer-review/:node_id' });
   this.route('login');
   this.route('signup');
   this.route('journals');
-  this.route('contract');
-  this.route('filters');
-  this.route('contract-list');
-  this.route('accounts');
+  this.route('create-contract');
+  this.route('view-contract');
+  this.route('list-contracts');
 });
 
 export default Router;
