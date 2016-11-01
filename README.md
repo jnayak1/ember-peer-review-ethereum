@@ -1,6 +1,7 @@
 # ember-peer-review-ethereum
+A prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application).
 
-This is a prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application). The purpose of this prototype is to show how "journals" (groups of scientific experts) can offer peer-review services and researchers can submit their reports to these "journals" for peer-review without the need for coordination from intermediates or central authorities. Instead, journals and researchers can be brought together over the Ethereum blockchain.
+The purpose of this prototype is to show how "journals" (groups of scientific experts) can offer peer-review services and researchers can submit their reports to these "journals" for peer-review without the need for coordination from intermediates or central authorities. Instead, journals and researchers can be brought together over the Ethereum blockchain.
 
 Work in progress!
 
@@ -61,8 +62,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 Deployment could be done in a few of different ways:
-- a traditinal HTTP server (i.e. [NGINX](https://www.nginx.com/resources/wiki/), or [Apache Web Server](https://httpd.apache.org/)).
-- a CDN (i.e. [Amazon Cloud Front](https://aws.amazon.com/cloudfront/)).
+- a traditional HTTP server (e.g. [NGINX](https://www.nginx.com/resources/wiki/), or [Apache Web Server](https://httpd.apache.org/)).
+- a CDN (e.g. [Amazon Cloud Front](https://aws.amazon.com/cloudfront/)).
 - a peer-to-peer delivery network such as [IPFS](https://ipfs.io/).
 
 ## Further Reading / Useful Links
