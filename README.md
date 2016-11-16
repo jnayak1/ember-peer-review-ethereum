@@ -1,4 +1,7 @@
 # ember-peer-review-ethereum
+
+Build Status `master`: [![Build Status](https://travis-ci.org/jnayak1/ember-peer-review-ethereum.svg?branch=master)](https://travis-ci.org/jnayak1/ember-peer-review-ethereum)
+
 A prototype for a peer-review [Ethereum](https://www.ethereum.org/) dapp (decentralized application).
 
 The purpose of this prototype is to show how "journals" (groups of scientific experts) can offer peer-review services and researchers can submit their reports to these "journals" for peer-review without the need for coordination from intermediates or central authorities. Instead, journals and researchers can be brought together over the Ethereum blockchain.
