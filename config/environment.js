@@ -11,7 +11,7 @@ module.exports = function(environment) {
       };
   }
   var ENV = {
-      modulePrefix: 'prototype-ember',
+      modulePrefix: 'ember-peer-review-ethereum',
       environment: environment,
       rootURL: '/',
       locationType: 'auto',
@@ -60,6 +60,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.locationType = 'hash';
+    ENV.rootURL = '/prototype-ember/';
 
   }
 

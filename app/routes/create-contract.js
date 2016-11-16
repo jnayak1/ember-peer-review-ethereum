@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     web3js: Ember.inject.service('web3js'), 
     model(){
-        return null;
+        // Create PeerReview ember object from model
     },
     actions: {
         sendContract(journalAddress, amountToSend, fileHash){
