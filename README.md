@@ -29,8 +29,8 @@ You will need these installed too.
 ## Installation
 
 * `git clone https://github.com/jnayak1/ember-peer-review-ethereum.git`
-* `cd ../ember-peer-review-ethereum`
-* Complete config/local.yml with keys obtained from osf.io or staging.osf.io
+* `cd ember-peer-review-ethereum/`
+* Complete config/local.yml with keys obtained from [osf.io](https://osf.io/settings/applications/create/) or [staging.osf.io](https://staging.osf.io/settings/applications/create/)
 * `npm install`
 * `bower install`
 
