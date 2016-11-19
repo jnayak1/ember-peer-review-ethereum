@@ -29,14 +29,7 @@ You will need these installed too.
 ## Installation
 
 * `git clone https://github.com/jnayak1/ember-peer-review-ethereum.git`
-* `git clone https://github.com/CenterForOpenScience/ember-osf.git`
-* `cd ember-osf`
-* Complete config/local.yml with keys obtained from osf.io or staging.osf.io
-* `npm install`
-* `bower install`
 * `cd ../ember-peer-review-ethereum`
-* `ember install ../ember-osf`
-* `npm link ../ember-osf`
 * Complete config/local.yml with keys obtained from osf.io or staging.osf.io
 * `npm install`
 * `bower install`
