@@ -13,6 +13,7 @@ export default {
         tags: `Tags`,
         search: `Search`,
         brand: `Peer-Review Ethereum`,
+        view_contracts: `View journals`,
         add_contract: `Submit to a journal`,
         add_journal: `Become a journal`,
         title: `Title`,

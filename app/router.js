@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('create-contract');
   this.route('view-contract', { path: '/view-contract/:contract_id' });
   this.route('list-contracts');
+  this.route('create-journal');
 });
 
 export default Router;
