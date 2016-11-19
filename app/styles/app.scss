@@ -7,20 +7,79 @@
     padding-top: 50px;
 }
 
-.peer-review-header{
+.peer-review-header {
     background-image: url("images/9k=.jpg");
-    min-height: 300px;
+    min-height: 400px;
     padding:15px;
 }
 
-.peer-review-description{
-    min-height: 100px;
+.peer-review-title {
+    padding-top: 100px;
+    color: white;
 }
 
-.peer-review-setup{
-    background-image: url("images/10k=.jpg");
-    min-height: 100px;
+.peer-review-subtitle {
+    color: white;
 }
+
+.peer-review-description {
+    min-height: 100px;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+.peer-review-chained-together {
+    padding-top: 50px;
+}
+
+.peer-review-benefits {
+    padding-top: 50px;
+    background-image: url("images/10k=.jpg");
+}
+.peer-review-benefits-description {
+    background-image: url("images/10k=.jpg");
+    color: white;
+    font-size: 20px;
+}
+ .peer-review-install {
+    padding-top: 50px;
+ }
+ .peer-review-running {
+    padding-bottom: 50px;
+ }
+
+
+
+.preprint-navbar {
+    position: fixed;
+    top: 51px;
+    width: 100%;
+    padding: 0;
+    background: #578CA2;
+    z-index: 99;
+    box-shadow: 0 0 4px #525151;
+    border-radius: 0;
+    a {
+        color: #ffffff;
+    }
+    .nav > li > a:hover, .nav > li > a.active, .navbar-brand:hover {
+        background-color: #65a0b9;
+    }
+    .nav > li > a:focus:not(.active) {
+        background-color: transparent;
+    }
+    .navbar-brand a {
+        text-decoration: none;
+    }
+    .navbar-brand a:hover {
+        text-decoration: none;
+    }
+    .navbar-toggle {
+        color: #eeeeee;
+    }
+}
+
+
 
 /* Override styles from ember-osf and osf */
 .footer {
